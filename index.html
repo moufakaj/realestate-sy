@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عقارات النخبة | أفضل العروض العقارية</title>
+    <!-- Google Fonts: Cairo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        cairo: ['Cairo', 'sans-serif'],
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        body { font-family: 'Cairo', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-2xl font-800 text-blue-700">عقارات<span class="text-gray-800">النخبة</span></div>
+            <a href="https://wa.me/966500000000" class="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-full font-bold transition duration-300">
+                اتصل بنا
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Lead Form -->
+    <header class="relative bg-blue-900 text-white py-16 md:py-24 overflow-hidden">
+        <!-- Background Image Placeholder -->
+        <div class="absolute inset-0 opacity-30">
+            <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Real Estate" class="w-full h-full object-cover">
+        </div>
+
+        <div class="container mx-auto px-4 relative z-10 flex flex-col md:flex-row items-center gap-12">
+            <!-- Hero Text -->
+            <div class="md:w-1/2 text-center md:text-right">
+                <h1 class="text-4xl md:text-6xl font-800 mb-6 leading-tight">
+                    احصل على منزل أحلامك بأفضل سعر
+                </h1>
+                <p class="text-lg md:text-xl text-blue-100 mb-8 leading-relaxed">
+                    نقدم لك مجموعة حصرية من العقارات والفرص الاستثمارية في أرقى الأحياء. سجل اهتمامك الآن للحصول على العروض الخاصة.
+                </p>
+            </div>
+
+            <!-- Lead Capture Form -->
+            <div class="md:w-1/2 w-full max-w-md">
+                <div class="bg-white p-8 rounded-2xl shadow-2xl text-gray-800">
+                    <h3 class="text-2xl font-bold mb-6 text-center text-blue-900">احجز استشارتك المجانية</h3>
+                    <form id="leadForm" onsubmit="handleFormSubmit(event)" class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-semibold mb-2">الاسم الكامل</label>
+                            <input type="text" id="name" required placeholder="أدخل اسمك" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none transition">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold mb-2">رقم الجوال</label>
+                            <input type="tel" id="phone" required placeholder="05xxxxxxxx" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none transition text-left" dir="ltr">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold mb-2">نوع العقار المهتم به</label>
+                            <select id="interest" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none transition">
+                                <option>شقق سكنية</option>
+                                <option>فلل فاخرة</option>
+                                <option>أراضي استثمارية</option>
+                                <option>مكاتب تجارية</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 rounded-lg shadow-lg transform transition active:scale-95">
+                            أريد عرض الأسعار
+                        </button>
+                    </form>
+                    <p class="text-xs text-gray-500 mt-4 text-center">بضغطك على الزر، أنت توافق على سياسة الخصوصية الخاصة بنا.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Property Deals Section -->
+    <section id="deals" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-800 text-gray-900 mb-4">أقوى العروض العقارية</h2>
+                <div class="h-1.5 w-24 bg-blue-600 mx-auto rounded-full"></div>
+            </div>
+
+            <!-- Property Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Card 1 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-2xl transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Villa" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <span class="bg-blue-100 text-blue-700 text-xs font-bold px-3 py-1 rounded-full">فيلا فاخرة</span>
+                        <h3 class="text-xl font-bold mt-3">فيلا ريفيرا بحديقة خاصة</h3>
+                        <p class="text-gray-500 text-sm mt-2">الرياض، حي النرجس</p>
+                        <div class="flex justify-between items-center mt-6">
+                            <span class="text-2xl font-800 text-blue-600">2,500,000 ر.س</span>
+                        </div>
+                        <a href="https://wa.me/966500000000?text=أنا مهتم بفيلا ريفيرا" target="_blank" class="block text-center mt-6 bg-green-500 hover:bg-green-600 text-white font-bold py-3 rounded-lg transition duration-300">
+                            تواصل عبر واتساب
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-2xl transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Apartment" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <span class="bg-blue-100 text-blue-700 text-xs font-bold px-3 py-1 rounded-full">شقة مودرن</span>
+                        <h3 class="text-xl font-bold mt-3">شقة بإطلالة بحرية</h3>
+                        <p class="text-gray-500 text-sm mt-2">جدة، حي أبحر الشمالي</p>
+                        <div class="flex justify-between items-center mt-6">
+                            <span class="text-2xl font-800 text-blue-600">850,000 ر.س</span>
+                        </div>
+                        <a href="https://wa.me/966500000000?text=أنا مهتم بالشقة المطلة على البحر" target="_blank" class="block text-center mt-6 bg-green-500 hover:bg-green-600 text-white font-bold py-3 rounded-lg transition duration-300">
+                            تواصل عبر واتساب
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-2xl transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Penthouse" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <span class="bg-blue-100 text-blue-700 text-xs font-bold px-3 py-1 rounded-full">بنتهاوس</span>
+                        <h3 class="text-xl font-bold mt-3">بنتهاوس ملكي واسع</h3>
+                        <p class="text-gray-500 text-sm mt-2">الرياض، حي الملقا</p>
+                        <div class="flex justify-between items-center mt-6">
+                            <span class="text-2xl font-800 text-blue-600">1,200,000 ر.س</span>
+                        </div>
+                        <a href="https://wa.me/966500000000?text=أنا مهتم بالبنتهاوس الملكي" target="_blank" class="block text-center mt-6 bg-green-500 hover:bg-green-600 text-white font-bold py-3 rounded-lg transition duration-300">
+                            تواصل عبر واتساب
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-2xl transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Land" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <span class="bg-blue-100 text-blue-700 text-xs font-bold px-3 py-1 rounded-full">أرض سكنية</span>
+                        <h3 class="text-xl font-bold mt-3">أرض زاوية مميزة</h3>
+                        <p class="text-gray-500 text-sm mt-2">الدمام، حي الشاطئ</p>
+                        <div class="flex justify-between items-center mt-6">
+                            <span class="text-2xl font-800 text-blue-600">600,000 ر.س</span>
+                        </div>
+                        <a href="https://wa.me/966500000000?text=أنا مهتم بالأرض الزاوية" target="_blank" class="block text-center mt-6 bg-green-500 hover:bg-green-600 text-white font-bold py-3 rounded-lg transition duration-300">
+                            تواصل عبر واتساب
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12 border-t border-gray-800">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-2xl font-bold text-white mb-4">عقارات النخبة</h2>
+            <p class="mb-6">جميع الحقوق محفوظة © 2024</p>
+            <div class="flex justify-center space-x-6 space-x-reverse">
+                <a href="#" class="hover:text-blue-500">تويتر</a>
+                <a href="#" class="hover:text-pink-500">انستغرام</a>
+                <a href="#" class="hover:text-blue-400">فيسبوك</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Form Handler Script -->
+    <script>
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const interest = document.getElementById('interest').value;
+
+            console.log("New Lead Collected:", { name, phone, interest });
+
+            // Display a success message (optional)
+            alert("شكراً لك " + name + "! تم استلام طلبك. سنقوم بتوجيهك الآن إلى أقوى العروض المتاحة.");
+
+            // Smooth Redirect to the Deals Section
+            window.location.hash = "#deals";
+            
+            // Optional: Reset form
+            document.getElementById('leadForm').reset();
+        }
+    </script>
+
+</body>
+</html>
